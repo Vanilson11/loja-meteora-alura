@@ -14,15 +14,23 @@
 <body>
   <div id="page">
     <div class="cabecalho">
-      <header>
+      <header id="cabecalho-wrapper">
         <div class="header-img">
           <img src="assets/imgs/Logo mobile.png" alt="Logo da loja Meteora">
         </div>
 
         <div class="header-sidebar">
-          <i class="ph-bold ph-list" id="clickMenu"></i>
+          <i class="ph-bold ph-list" id="mostraNavigation"></i>
           <!--Seção de sidebar após o click-->
         </div>
+
+        <ul class="navigation">
+          <i class="ph-bold ph-x" id="fechaNav"></i>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Nossas lojas</a></li>
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Promoções</a></li>
+        </ul>
       </header>
 
       <div class="cabecalho-search">
@@ -38,5 +46,7 @@
       </div>
     </div>
   </div>
+
+  <script src="app/main.js"></script>
 </body>
 </html>

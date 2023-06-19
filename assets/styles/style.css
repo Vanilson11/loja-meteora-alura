@@ -13,6 +13,9 @@
   --color-fill-white: #FFFFFF;
   --color-fill-black: #000000;
   --color-fill-secondary: #6C757D;
+  --bkg-nav: #343A40;
+  --hover-nav: #DAFF01;
+  --border-bottom-nav: #CED4DA;
 }
 
 body{
@@ -41,6 +44,8 @@ body{
   justify-content: space-between;
 
   padding: 2rem 2.2rem;
+
+  position: relative;
 }
 
 .cabecalho header .header-img{
@@ -70,6 +75,65 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 2.8rem;
+
+  color: yellow;
+
+  cursor: pointer;
+}
+
+header .navigation{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 15.4rem;
+  height: 19.7rem;
+
+  padding: 1.4rem 2.7rem;
+
+  background-color: var(--bkg-nav);
+
+  list-style: none;
+
+  position: absolute;
+  top: 0;
+  left: 35.8rem;
+  z-index: 1;
+
+  visibility: hidden;
+}
+
+header ul li{
+  padding-bottom: 8px;
+
+  border-bottom: 1px solid var(--border-bottom-nav);
+}
+
+header ul li:nth-child(5){
+  border: none;
+}
+
+header ul li a{
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  color: var(--color-fill-white);
+
+  text-decoration: none;
+}
+
+header ul li a:hover{
+  color: var(--hover-nav);
+}
+
+header ul i{
+  align-self: flex-end;
+
+  width: 1.8rem;
+  height: 1.7rem;
 
   font-size: 2.8rem;
 
