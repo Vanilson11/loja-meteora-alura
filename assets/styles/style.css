@@ -1,3 +1,4 @@
+/* Versão Mobile 375px*/
 *{
   margin: 0;
   padding: 0;
@@ -99,7 +100,7 @@ header .navigation{
 
   position: absolute;
   top: 0;
-  left: 35.8rem;
+  left: 22.8rem;
   z-index: 1;
 
   visibility: hidden;
@@ -145,6 +146,8 @@ header ul i{
 .cabecalho .cabecalho-search{
   background-color: var(--color-fill-white);
 
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,6 +156,7 @@ header ul i{
 }
 
 .cabecalho-search .search-campos{
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
