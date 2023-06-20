@@ -273,3 +273,16 @@ header ul i{
   width: 3rem;
   height: 3px;
 }
+
+.paths-wrappe{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 0 1rem;
+
+  position: absolute;
+  top: 21.2rem;
+}
