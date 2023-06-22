@@ -18,12 +18,11 @@
   --bkg-nav: #343A40;
   --hover-nav: #DAFF01;
   --border-bottom-nav: #CED4DA;
+  --bkg-button-color: #9353FF;
 }
 
 body{
   width: 100vw;
-
-  background-color: var(--cinza-meteora);
 
   font-size: var(--fs-primary)
 }
@@ -326,12 +325,10 @@ header ul i{
   align-items: center;
   width: 100%;
   height: 19.2rem;
-
-  transition: transform 200ms ease;
 }
 
-.categorias-cards .card-produto:hover{
-  transform: scale(1.1);
+.categorias-cards .card-produto .card-img{
+  overflow: hidden;
 }
 
 .categorias-cards .card-produto img{
@@ -340,6 +337,12 @@ header ul i{
   object-fit: cover;
 
   margin: 0;
+
+  transition: transform 200ms ease;
+}
+
+.categorias-cards .card-produto:hover img{
+  transform: scale(1.1);
 }
 
 .categorias-cards .card-produto span{
@@ -357,6 +360,108 @@ header ul i{
 
   width: 100%;
   height: 3.5rem;
+
+  cursor: pointer;
+}
+
+.produtos-bombando{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  padding: 0 1.7rem;
+}
+
+.produtos-bombando h2{
+  font-size: 2.8rem;
+  font-family: var(--ff-primary);
+  font-weight: 500;
+
+  color: var(--color-fill-font-color);
+
+  text-align: center;
+}
+
+.produtos-bombando .produto-card{
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+
+  padding-bottom: 1.6rem;
+
+  border: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.produto-card .produto-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+} 
+
+.produto-card .produto-img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  border-radius: 0;
+}
+
+.produto-card .produto-descricao{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  padding: 0 1.6rem;
+}
+
+.produto-card .produto-descricao h3{
+  font-size: var(--fs-primary);
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  line-height: 2.3rem;
+}
+
+.produto-card .produto-descricao p{
+  font-size: 1.3rem;
+  font-family: var(--ff-primary);
+  line-height: 2rem;
+
+  color: var(--color-fill-font-color);
+}
+
+.produto-card .produto-descricao span{
+  font-size: 1.6rem;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  line-height: 2.3rem;
+}
+
+.produto-card .produto-descricao button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--bkg-button-color);
+  color: var(--color-fill-white);
+
+  width: 10.2rem;
+
+  padding: 9px 1.6rem;
+
+  font-size: 1.6rem;
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  letter-spacing: 0.457px;
+
+  border: none;
 }
 
 @keyframes slideToTop{
