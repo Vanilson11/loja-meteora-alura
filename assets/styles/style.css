@@ -389,7 +389,6 @@ header ul i{
   width: 100%;
   display: grid;
   align-items: center;
-  justify-content: center;
   gap: 1.3rem;
 
   padding-bottom: 1.6rem;
@@ -422,7 +421,6 @@ header ul i{
 
 .produto-card .produto-descricao{
   display: grid;
-  justify-content: center;
   align-items: center;
   gap: 1.5rem;
 
