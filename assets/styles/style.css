@@ -488,9 +488,59 @@ header ul i{
   font-family: var(--ff-primary);
   font-weight: 500;
 
-  text-align: center;
+  /* text-align: center; */
 
-  width: 31.3rem;
+  min-width: 31.3rem;
+}
+
+.redes-sociais .servicos{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.servicos .servico-content{
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+
+  width: 31.9rem;
+}
+
+.servico-content .servico-img img{
+  width: 100%;
+  height: auto;
+}
+
+.servico-content .servico-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 23.9rem;
+}
+
+.servico-text h4{
+  font-size: 16px;
+  font-family: var(--ff-primary);
+  font-weight: 700;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+
+  color: var(--hover-nav);
+}
+
+.servico-text p{
+  font-size: 1.3rem;
+  font-family: var(--ff-primary);
+  line-height: 2rem;
+
+  color: var(--color-fill-white);
+
+  width: 19rem;
 }
 
 @keyframes slideToTop{
