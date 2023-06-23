@@ -545,6 +545,103 @@ header ul i{
   width: 19rem;
 }
 
+.newsletter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.9rem 0;
+}
+
+.newsletter form{
+  width: 321px; 
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+
+  border: 1px solid var(--color-fill-black);
+}
+
+.newsletter form h4{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: var(--fs-primary);
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  line-height: 2.3rem;
+
+  color: var(--color-fill-font-color);
+}
+
+.newsletter .campos{
+  display: flex;
+  align-items: center;
+  width: 28.9rem;
+
+  position: relative;
+}
+
+.newsletter .campos .campo-email{
+  width: 100%;
+  height: 3.8rem;
+  display: flex;
+  gap: 0;
+  padding: 0 1.6rem;
+}
+
+.newsletter .campos .campo-email label{
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.newsletter .campos .campo-email input{
+  width: 100%;
+
+  padding: 7px 1.5rem;
+
+  font-size: var(--fs-primary);
+  font-family: var(--ff-primary);
+  line-height: 2.3rem;
+
+  color: var(--color-fill-black);
+
+  border: 1px solid var(--color-fill-secondary);
+
+  border-radius: 0px;
+  outline: none;
+}
+
+.newsletter .campos .campo-email input::placeholder{
+  color: var(--color-fill-secondary);
+}
+
+.newsletter .campos .campo-email input:focus{
+  border: 1px solid var(--color-fill-black);
+}
+
+.campos .campo-email button{
+  width: 8.4rem;
+  padding: 9px 1.8rem;
+
+  border: 1px solid var(--bkg-button-color);
+  background: var(--bkg-button-color);
+  color: var(--color-fill-white);
+
+  font-size: var(--fs-primary);
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  letter-spacing: 0.457px;
+}
 @keyframes slideToTop{
   0%{
     opacity: 0;
